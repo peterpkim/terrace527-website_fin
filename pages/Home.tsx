@@ -27,35 +27,35 @@ const EXPERIENCE_ITEMS = [
     badge: "Exclusive Package",
     titleKo: "개별 온수 스파",
     description: "프라이빗한 노천 스파에서 즐기는 따뜻한 휴식. 계절의 온도를 피부로 느끼며 쌓인 피로를 씻어냅니다.",
-    image: "IMAGE/Home_Exp_01.webp",
+    image: "./IMAGE/Home_Exp_01.webp",
     link: "/experience/heal"
   },
   {
     badge: "Water Play",
     titleKo: "천연 암반수 풀",
     description: "지하 250m 천연 암반수를 사용한 대형 수영장. 화학 약품 없는 깨끗한 물에서 안심하고 즐기세요.",
-    image: "IMAGE/Home_Exp_02.webp",
+    image: "./IMAGE/Home_Exp_02.webp",
     link: "/experience/heal"
   },
   {
     badge: "Nature Walk",
     titleKo: "산정호수 산책",
     description: "도보 5분 거리의 산정호수 둘레길. 물안개 피는 새벽의 고요함과 사계절의 변화를 가장 가까이서 마주하세요.",
-    image: "IMAGE/Home_Exp_03.webp",
+    image: "./IMAGE/Home_Exp_03.webp",
     link: "/experience/heal"
   },
   {
     badge: "Summer Vibe",
     titleKo: "자연 계곡 이용",
     description: "숙소 바로 앞 청정 1급수 계곡. 시원한 물소리를 배경으로 발끝에 닿는 자연의 온도를 느껴보세요.",
-    image: "IMAGE/Home_Exp_04.webp",
+    image: "./IMAGE/Home_Exp_04.webp",
     link: "/experience/heal"
   },
   {
     badge: "Convenience",
     titleKo: "스마트 오더",
     description: "객실 내 태블릿과 QR 코드를 통한 비대면 주문 시스템. 바베큐 세트부터 소모품까지 문 앞까지 배달됩니다.",
-    image: "IMAGE/Home_Exp_05.webp",
+    image: "./IMAGE/Home_Exp_05.webp",
     link: "/experience/service"
   }
 ];
