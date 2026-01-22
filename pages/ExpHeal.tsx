@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Waves, Mountain, Map, Bed, ThermometerSun, Droplets, ChevronRight, Sparkles, ArrowRight } from 'lucide-react';
@@ -10,12 +9,12 @@ const EXP_NAV = [
 ];
 
 const PROGRAMS = [
-  { id: 'spa', titleEn: 'Outdoor Hot Spa', titleKo: '온수 스파', concept: '사계절 내내 누리는 따스한 고요', description: '최고급 노천 스파 시스템으로 숲을 마주하며 쌓인 피로를 풀어보세요.', items: ['프라이빗 개별 테라스 스파', '최적의 온열 시스템', '프리미엄 입욕제 제공'], info: { time: '입실 후 ~ 22:00', type: '객실별 유료 옵션' }, icon: <Waves />, image: 'https://images.unsplash.com/photo-1544161515-4af6b1d462c2?q=80&w=1200' },
-  { id: 'pool', titleEn: 'Groundwater Pool', titleKo: '야외 수영장', concept: '지하 200m 암반수의 청량함', description: '천연 암반수를 사용하여 계곡의 시원함을 그대로 담은 대형 야외 수영장입니다.', items: ['지하 200m 천연 암반수', '7M 대형 아웃도어 풀', '여름 시즌 전용 운영'], info: { time: '10:00 ~ 18:00', type: '투숙객 무료 개방' }, icon: <Droplets />, image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200' },
-  { id: 'valley', titleEn: 'Natural Valley', titleKo: '자연 계곡 이용', concept: '숙소 바로 앞, 1급수의 시원함', description: '테라스 527 입구 바로 앞 청정 계곡. 자연의 소리를 들으며 물놀이를 즐기세요.', items: ['입구 맞은편 도보 1분', '사계절 맑은 1급수 계곡', '자연 그늘막 완비'], info: { time: '상시 이용 가능', type: '자연 무료 이용' }, icon: <Mountain />, image: 'https://images.unsplash.com/photo-1434725039720-bbdb6cd754e4?q=80&w=1200' },
-  { id: 'nature', titleEn: 'Lake Walk', titleKo: '호수 산책', concept: '물안개 피는 새벽의 고요한 산책', description: '도보 5분 거리의 산정호수 둘레길. 사계절의 변화를 가장 가까이서 느껴보세요.', items: ['산정호수 둘레길 인접', '포토스팟 가이드 제공', '조식 전 아침 산책 추천'], info: { time: '일출 ~ 일몰 추천', type: '자연 무료 이용' }, icon: <Map />, image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200' },
-  { id: 'bedding', titleEn: 'Premium Bedding', titleKo: '고급 침구 & 어메니티', concept: '호텔의 안락함을 자연 속으로', description: '최고급 구스 침구와 친환경 어메니티로 완벽한 숙면을 제공합니다.', items: ['프리미엄 구스 이불', '고체 어메니티 세트', '매일 살균 세탁 시스템'], info: { time: '입실 시 비치', type: '전 객실 기본 제공' }, icon: <Bed />, image: 'https://images.unsplash.com/photo-1505691938895-1758d7eaa511?q=80&w=1200' },
-  { id: 'heating', titleEn: 'Winter Heating', titleKo: '겨울철 난방 완비', concept: '한겨울에도 훈훈한 글램핑', description: '바닥 난방과 온풍기, 등유 난로까지 3중 난방 시스템으로 겨울 캠핑 걱정 없습니다.', items: ['전 객실 바닥 난방', '에어컨/온풍기 겸용', '등유 난로 대여 가능'], info: { time: '사계절 상시', type: '전 객실 기본 완비' }, icon: <ThermometerSun />, image: 'https://images.unsplash.com/photo-1518331193919-20ae743322a9?q=80&w=1200' },
+  { id: 'spa', titleEn: 'Outdoor Hot Spa', titleKo: '온수 스파', concept: '사계절 내내 누리는 따스한 고요', description: '최고급 노천 스파 시스템으로 숲을 마주하며 쌓인 피로를 풀어보세요.', items: ['프라이빗 개별 테라스 스파', '최적의 온열 시스템', '프리미엄 입욕제 제공'], info: { time: '입실 후 ~ 22:00', type: '객실별 유료 옵션' }, icon: <Waves />, image: 'IMAGE/Heal_Prog_01.webp' },
+  { id: 'pool', titleEn: 'Groundwater Pool', titleKo: '야외 수영장', concept: '지하 200m 암반수의 청량함', description: '천연 암반수를 사용하여 계곡의 시원함을 그대로 담은 대형 야외 수영장입니다.', items: ['지하 200m 천연 암반수', '7M 대형 아웃도어 풀', '여름 시즌 전용 운영'], info: { time: '10:00 ~ 18:00', type: '투숙객 무료 개방' }, icon: <Droplets />, image: 'IMAGE/Heal_Prog_02.webp' },
+  { id: 'valley', titleEn: 'Natural Valley', titleKo: '자연 계곡 이용', concept: '숙소 바로 앞, 1급수의 시원함', description: '테라스 527 입구 바로 앞 청정 계곡. 자연의 소리를 들으며 물놀이를 즐기세요.', items: ['입구 맞은편 도보 1분', '사계절 맑은 1급수 계곡', '자연 그늘막 완비'], info: { time: '상시 이용 가능', type: '자연 무료 이용' }, icon: <Mountain />, image: 'IMAGE/Heal_Prog_03.webp' },
+  { id: 'nature', titleEn: 'Lake Walk', titleKo: '호수 산책', concept: '물안개 피는 새벽의 고요한 산책', description: '도보 5분 거리의 산정호수 둘레길. 사계절의 변화를 가장 가까이서 느껴보세요.', items: ['산정호수 둘레길 인접', '포토스팟 가이드 제공', '조식 전 아침 산책 추천'], info: { time: '일출 ~ 일몰 추천', type: '자연 무료 이용' }, icon: <Map />, image: 'IMAGE/Heal_Prog_04.webp' },
+  { id: 'bedding', titleEn: 'Premium Bedding', titleKo: '고급 침구 & 어메니티', concept: '호텔의 안락함을 자연 속으로', description: '최고급 구스 침구와 친환경 어메니티로 완벽한 숙면을 제공합니다.', items: ['프리미엄 구스 이불', '고체 어메니티 세트', '매일 살균 세탁 시스템'], info: { time: '입실 시 비치', type: '전 객실 기본 제공' }, icon: <Bed />, image: 'IMAGE/Heal_Prog_05.webp' },
+  { id: 'heating', titleEn: 'Winter Heating', titleKo: '겨울철 난방 완비', concept: '한겨울에도 훈훈한 글램핑', description: '바닥 난방과 온풍기, 등유 난로까지 3중 난방 시스템으로 겨울 캠핑 걱정 없습니다.', items: ['전 객실 바닥 난방', '에어컨/온풍기 겸용', '등유 난로 대여 가능'], info: { time: '사계절 상시', type: '전 객실 기본 완비' }, icon: <ThermometerSun />, image: 'IMAGE/Heal_Prog_06.webp' },
 ];
 
 const ProgramBlock: React.FC<any> = ({ titleEn, titleKo, concept, description, items, info, icon, image }) => (
@@ -23,7 +22,6 @@ const ProgramBlock: React.FC<any> = ({ titleEn, titleKo, concept, description, i
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 md:gap-20 items-center">
       <div className="lg:col-span-7 relative rounded-[2.5rem] overflow-hidden shadow-xl aspect-[16/10] bg-stone-100">
         <img src={image} alt={titleKo} className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover/block:scale-110" />
-        {/* Mobile Icon Fix: p-3 on mobile, p-6 on md */}
         <div className="absolute top-4 left-4 md:top-10 md:left-10 bg-emerald-900 text-white p-3 md:p-6 rounded-[1.5rem] md:rounded-[2rem] shadow-xl">
           {React.cloneElement(icon as React.ReactElement<any>, { size: 18, className: "md:w-[28px] md:h-[28px]" })}
         </div>
@@ -65,7 +63,7 @@ const ExpHeal: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center bg-gray-950 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2000" className="w-full h-full object-cover opacity-30 scale-105" alt="Heal & Comfort" />
+          <img src="IMAGE/Exp_Hero_H.webp" className="w-full h-full object-cover opacity-30 scale-105" alt="Heal & Comfort" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <span className="text-white/40 text-[10px] tracking-[0.5em] font-bold uppercase block mb-6 md:mb-8">Heal & Comfort</span>
@@ -93,7 +91,7 @@ const ExpHeal: React.FC = () => {
       {/* Unified CTA Section */}
       <section className="bg-stone-950 py-16 px-6 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=2000" alt="BG" className="w-full h-full object-cover grayscale opacity-20 blur-sm" />
+          <img src="IMAGE/Exp_Footer_H.webp" alt="BG" className="w-full h-full object-cover grayscale opacity-20 blur-sm" />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-[3rem] py-16 text-center shadow-2xl">

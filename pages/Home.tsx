@@ -1,15 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  ArrowDown, 
   MapPin, 
   Car, 
   Trees, 
   ArrowRight,
   ChevronLeft,
   ChevronRight,
-  CheckCircle2,
-  Sparkles,
   ExternalLink,
   Zap,
   Coffee,
@@ -18,11 +15,11 @@ import {
 } from 'lucide-react';
 
 const HERO_IMAGES = [
-  './IMAGE/Hero_01.webp', 
-  './IMAGE/Hero_02.webp', 
-  './IMAGE/Hero_03.webp', 
-  './IMAGE/Hero_04.webp', 
-  './IMAGE/Hero_05.webp'
+  'IMAGE/Hero_01.webp', 
+  'IMAGE/Hero_02.webp', 
+  'IMAGE/Hero_03.webp', 
+  'IMAGE/Hero_04.webp', 
+  'IMAGE/Hero_05.webp'
 ];
 
 const EXPERIENCE_ITEMS = [
@@ -30,35 +27,35 @@ const EXPERIENCE_ITEMS = [
     badge: "Exclusive Package",
     titleKo: "개별 온수 스파",
     description: "프라이빗한 노천 스파에서 즐기는 따뜻한 휴식. 계절의 온도를 피부로 느끼며 쌓인 피로를 씻어냅니다.",
-    image: "./IMAGE/Home_Exp_01",
+    image: "IMAGE/Home_Exp_01.webp",
     link: "/experience/heal"
   },
   {
     badge: "Water Play",
     titleKo: "천연 암반수 풀",
     description: "지하 250m 천연 암반수를 사용한 대형 수영장. 화학 약품 없는 깨끗한 물에서 안심하고 즐기세요.",
-    image: "IMAGE/Home_Exp_02",
+    image: "IMAGE/Home_Exp_02.webp",
     link: "/experience/heal"
   },
   {
     badge: "Nature Walk",
     titleKo: "산정호수 산책",
     description: "도보 5분 거리의 산정호수 둘레길. 물안개 피는 새벽의 고요함과 사계절의 변화를 가장 가까이서 마주하세요.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200",
+    image: "IMAGE/Home_Exp_03.webp",
     link: "/experience/heal"
   },
   {
     badge: "Summer Vibe",
     titleKo: "자연 계곡 이용",
     description: "숙소 바로 앞 청정 1급수 계곡. 시원한 물소리를 배경으로 발끝에 닿는 자연의 온도를 느껴보세요.",
-    image: "https://images.unsplash.com/photo-1434725039720-bbdb6cd754e4?q=80&w=1200",
+    image: "IMAGE/Home_Exp_04.webp",
     link: "/experience/heal"
   },
   {
     badge: "Convenience",
     titleKo: "스마트 오더",
     description: "객실 내 태블릿과 QR 코드를 통한 비대면 주문 시스템. 바베큐 세트부터 소모품까지 문 앞까지 배달됩니다.",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200",
+    image: "IMAGE/Home_Exp_05.webp",
     link: "/experience/service"
   }
 ];
@@ -178,14 +175,13 @@ const Home: React.FC = () => {
         </div>
       </header>
 
-      {/* Brand Story Section - Restored with 4 Core Advantages & Text Removed from Image */}
+      {/* Brand Story Section */}
       <section id="philosophy" className="py-24 md:py-32 bg-stone-50 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 md:gap-24 items-center">
             <div className="relative group overflow-hidden rounded-[2.5rem] shadow-2xl aspect-[4/5] md:aspect-auto md:h-[650px]">
-              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200" alt="Sanjeong Lake" className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110" />
+              <img src="IMAGE/Home_Story.webp" alt="Sanjeong Lake" className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110" />
               <div className="absolute inset-0 bg-emerald-950/10 mix-blend-multiply opacity-20"></div>
-              {/* Overlay Text Removed as requested */}
             </div>
             <div className="space-y-12">
               <div className="space-y-6">
@@ -217,7 +213,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Room Collection Section - Restored with "머무름의 미학" Staggered Layout */}
+      {/* Room Collection Section */}
       <section id="rooms" className="py-24 md:py-48 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-6">
@@ -236,7 +232,7 @@ const Home: React.FC = () => {
             <div className="md:translate-y-0">
               <Link to="/rooms/signature-glamping" className="group cursor-pointer block">
                 <div className="relative overflow-hidden bg-stone-100 aspect-[4/3] mb-8 rounded-[2.5rem] shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1200" alt="Signature Glamping" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                  <img src="IMAGE/Room_SG_01.webp" alt="Signature Glamping" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
                   <div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm px-8 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase shadow-lg text-emerald-900">Signature Line</div>
                 </div>
@@ -250,11 +246,11 @@ const Home: React.FC = () => {
               </Link>
             </div>
 
-            {/* Staggered Item 2 (The "어긋나있는" Offset) */}
+            {/* Staggered Item 2 */}
             <div className="md:translate-y-24">
               <Link to="/rooms/classic-stay" className="group cursor-pointer block">
                 <div className="relative overflow-hidden bg-stone-100 aspect-[4/3] mb-8 rounded-[2.5rem] shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1200" alt="Classic Stay" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                  <img src="IMAGE/Room_CS_01.webp" alt="Classic Stay" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors" />
                   <div className="absolute bottom-8 right-8 bg-white/95 backdrop-blur-sm px-8 py-3 rounded-full text-[10px] font-bold tracking-[0.3em] uppercase shadow-lg text-emerald-900">Classic Stay</div>
                 </div>
@@ -268,7 +264,6 @@ const Home: React.FC = () => {
               </Link>
             </div>
           </div>
-          {/* Spacer for staggered layout overlap */}
           <div className="md:h-48 h-0"></div>
         </div>
       </section>
@@ -323,10 +318,6 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-stone-50 flex flex-col items-center justify-center gap-4"><div className="w-8 h-8 border-2 border-stone-200 border-t-emerald-900 rounded-full animate-spin" /><p className="text-[10px] font-bold text-stone-400 uppercase tracking-widest">Loading Maps...</p></div>
               )}
             </div>
-            <div className="absolute -top-4 -right-4 bg-white p-3 rounded-2xl shadow-xl hidden lg:block z-10">
-              <p className="text-[9px] font-bold text-stone-400 uppercase tracking-[0.2em] mb-1">Parking</p>
-              <p className="text-[11px] font-bold text-stone-900">전용 주차장 완비</p>
-            </div>
           </div>
 
           <div className="order-1 md:order-2">
@@ -364,7 +355,7 @@ const Home: React.FC = () => {
 
       {/* CTA Reservation Section */}
       <section className="bg-stone-950 py-16 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 z-0"><img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=2000" alt="Footer BG" className="w-full h-full object-cover grayscale opacity-20 blur-sm scale-110" /></div>
+        <div className="absolute inset-0 z-0"><img src="IMAGE/Home_Footer.webp" alt="Footer BG" className="w-full h-full object-cover grayscale opacity-20 blur-sm scale-110" /></div>
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-[4rem] py-20 px-6 shadow-2xl">
             <h2 className="text-4xl md:text-6xl font-normal serif text-white tracking-tight leading-tight uppercase italic mb-8">Where Nature Begins</h2>

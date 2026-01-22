@@ -1,24 +1,18 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { ChevronRight, ChevronLeft, Sparkles } from 'lucide-react';
 
-/**
- * ############################################################
- * [ EDIT AREA: ROOM DETAILS & IMAGES ]
- * ############################################################
- */
 const ROOM_DATA = {
   titleEn: "Signature Glamping",
   titleKo: "시그니처 글램핑",
   badge: "Total 4 Premium Rooms",
   description: "테라스 527의 자부심인 시그니처 라인은 총 4개 동의 신축 프리미엄 객실입니다. 독보적인 공간감과 최신 사양의 시설로 하이엔드 글램핑을 정의합니다.",
   images: [
-    "IMAGE/main2.jpg", // # 이미지 1: 메인 대표 사진
-    "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1200", // # 이미지 2: 인테리어 1
-    "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200", // # 이미지 3: 인테리어 2
-    "https://images.unsplash.com/photo-1444464666168-49d633b867ad?q=80&w=1200", // # 이미지 4: 조경
-    "https://images.unsplash.com/photo-1414438991597-0017a226b972?q=80&w=1200"  // # 이미지 5: 야외 스파
+    "IMAGE/Room_SG_01.webp",
+    "IMAGE/Room_SG_02.webp",
+    "IMAGE/Room_SG_03.webp",
+    "IMAGE/Room_SG_04.webp",
+    "IMAGE/Room_SG_05.webp"
   ],
   specs: {
     standard: "2 Persons",
@@ -43,7 +37,6 @@ const RoomsSignatureGlamping: React.FC = () => {
 
   return (
     <div className="w-full bg-white">
-      {/* ROOM QUICK NAV */}
       <nav className="sticky top-20 bg-white/80 backdrop-blur-md z-40 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 overflow-x-auto scrollbar-hide">
           <div className="flex justify-start md:justify-center items-center min-w-max h-16 gap-8">

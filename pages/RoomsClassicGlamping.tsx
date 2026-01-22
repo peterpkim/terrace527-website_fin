@@ -1,25 +1,18 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 
-/**
- * [제작 가이드: 객실 상세 이미지]
- * - 권장 해상도: 1600x900px 이상 (16:9 비율 최적)
- * - 슬라이드용 첫 번째 이미지는 해당 객실의 가장 매력적인 '뷰(View)' 위주 권장
- * - 썸네일: 위 원본 이미지를 시스템이 자동으로 크롭하여 사용
- */
 const ROOM_DATA = {
   titleEn: "Classic Glamping",
   titleKo: "클래식 글램핑",
   badge: "Total 5 Rooms (Large 2 / Medium 3)",
   description: "가장 사랑받아 온 클래식 라인은 동일한 감성의 인테리어와 더불어 공간의 크기에 따라 대형과 중형으로 세분화됩니다.",
   images: [
-    "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1600", // 메인: 숲과 어우러진 텐트 전경
-    "https://images.unsplash.com/photo-1526494631344-8c6fa6462b17?q=80&w=1200", // 내부: 따뜻한 톤의 침실
-    "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?q=80&w=1200", // 테라스: 개별 바비큐 데크
-    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200", // 야경: 밤의 캠핑 감성
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200"  // 디테일: 정갈한 어메니티와 소품
+    "IMAGE/Room_CG_01.webp",
+    "IMAGE/Room_CG_02.webp",
+    "IMAGE/Room_CG_03.webp",
+    "IMAGE/Room_CG_04.webp",
+    "IMAGE/Room_CG_05.webp"
   ],
   specs: {
     standard: "2 Persons",

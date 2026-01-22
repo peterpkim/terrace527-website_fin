@@ -1,9 +1,8 @@
-
 {
   "hero": {
     "title": "자연이 일상이 된다",
     "subtitle": "특별한 목적지가 아닌, 당신의 하루가 머무는 배경이 됩니다.",
-    "backgroundImage": "https://images.unsplash.com/photo-1464202350444-2453fd634481?q=80&w=2400"
+    "backgroundImage": "IMAGE/Story_Hero.webp"
   },
   "intro": {
     "philosophy": "우리는 자연을 과시하지 않습니다. \n산정호수의 숲과 바람이 당신의 일상 속으로 \n가장 부드럽게 스며드는 지점을 제안합니다."
@@ -17,11 +16,11 @@
       "evidenceSlides": [
         {
           "text": "호수 둘레길과 바로 연결되는 아늑한 산책로",
-          "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200"
+          "image": "IMAGE/Story_Val_01.webp"
         },
         {
           "text": "발끝에 닿는 산정호수의 투명한 수면",
-          "image": "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=1200"
+          "image": "IMAGE/Story_Val_02.webp"
         }
       ]
     },
@@ -33,11 +32,11 @@
       "evidenceSlides": [
         {
           "text": "계절과 상관없이 즐길 수 있는 우리만의 온수 스파",
-          "image": "https://images.unsplash.com/photo-1544161515-4af6b1d462c2?q=80&w=1200"
+          "image": "IMAGE/Story_Val_03.webp"
         },
         {
           "text": "지하 200m 암반수로 채워진 청량한 휴식",
-          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200"
+          "image": "IMAGE/Story_Val_04.webp"
         }
       ]
     },
@@ -49,11 +48,11 @@
       "evidenceSlides": [
         {
           "text": "깊은 잠을 위해 준비한 프리미엄 구스 침구",
-          "image": "https://images.unsplash.com/photo-1505691938895-1758d7eaa511?q=80&w=1200"
+          "image": "IMAGE/Story_Val_05.webp"
         },
         {
           "text": "정돈된 무드로 마음을 차분하게 하는 스테이 공간",
-          "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=1200"
+          "image": "IMAGE/Story_Val_06.webp"
         }
       ]
     }

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Baby, Utensils, Gamepad2, MonitorPlay, Music, Sun, Sparkles, ArrowRight } from 'lucide-react';
@@ -10,12 +9,12 @@ const EXP_NAV = [
 ];
 
 const PROGRAMS = [
-  { id: 'kidszone', titleEn: 'Kids Zone', titleKo: '키즈존', concept: '모험과 안전이 공존하는 놀이터', description: '실내 정글짐과 야외 모래놀이터가 완비된 아이들을 위한 특별한 놀이 공간입니다.', items: ['실내 안전 정글짐 완비', '야외 모래놀이 구역', '어린이 도서 코너'], info: { time: '10:00 ~ 20:00', type: '투숙객 무료 개방' }, icon: <Baby />, image: 'https://images.unsplash.com/photo-1566411520896-01e7ca4726af?q=80&w=1200' },
-  { id: 'bbq', titleEn: 'BBQ Night', titleKo: 'BBQ Night', concept: '웨버 그릴과 함께하는 고품격 저녁', description: '최고급 웨버 바비큐 그릴과 불멍용 참나무 장작, 마시멜로 꼬치로 밤을 채우세요.', items: ['웨버 프리미엄 바비큐 그릴', '불멍용 참나무 장작 세트', '마시멜로 꼬치 제공'], info: { time: '17:00 ~ 21:00', type: '개별 유료 서비스' }, icon: <Utensils />, image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200' },
-  { id: 'arcade', titleEn: 'Arcade & Games', titleKo: '보드게임 & 오락기', concept: '가족과 즐기는 아날로그 오락', description: '인기 보드게임부터 추억의 레트로 오락기까지 준비되어 있습니다.', items: ['인기 보드게임 대여', '레트로 멀티 오락기', '프라이빗 게임존'], info: { time: '상시 이용 가능', type: '일부 유료 이용' }, icon: <Gamepad2 />, image: 'https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?q=80&w=1200' },
-  { id: 'cinema', titleEn: 'Private Cinema', titleKo: '프라이빗 시네마', concept: '숲속 영화관에서의 낭만', description: '대형 빔프로젝터와 스크린으로 우리 가족만의 영화관을 만들어 드립니다.', items: ['고화질 빔프로젝터 대여', '100인치 대형 스크린', '블루투스 사운드 시스템'], info: { time: '19:00 ~ 22:00', type: '사전 예약제' }, icon: <MonitorPlay />, image: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200' },
-  { id: 'karaoke', titleEn: 'Bus Karaoke', titleKo: '버스 노래방', concept: '이색 개조 버스 노래방', description: '실제 버스를 개조한 프라이빗 노래방에서 신나는 시간을 즐기세요.', items: ['프라이빗 단독 공간', '최신 가요 음원 완비', '90분 이용권 제공'], info: { time: '17:00 ~ 21:00', type: '90분 타임 예약제' }, icon: <Music />, image: 'https://images.unsplash.com/photo-1525268771113-32d9e9021a97?q=80&w=1200' },
-  { id: 'daybbq', titleEn: 'Day Trip BBQ', titleKo: '당일치기 BBQ', concept: '숙박 없이 즐기는 캠핑 감성', description: '객실 투숙 없이 야외 테라스에서 바비큐만 즐기고 싶은 분들을 위한 서비스입니다.', items: ['4시간 테라스 대여', '바비큐 도구 세트 포함', '계곡 및 편의시설 이용'], info: { time: '12:00 ~ 16:00', type: '당일 전용 상품' }, icon: <Sun />, image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200' },
+  { id: 'kidszone', titleEn: 'Kids Zone', titleKo: '키즈존', concept: '모험과 안전이 공존하는 놀이터', description: '실내 정글짐과 야외 모래놀이터가 완비된 아이들을 위한 특별한 놀이 공간입니다.', items: ['실내 안전 정글짐 완비', '야외 모래놀이 구역', '어린이 도서 코너'], info: { time: '10:00 ~ 20:00', type: '투숙객 무료 개방' }, icon: <Baby />, image: 'IMAGE/Play_Prog_01.webp' },
+  { id: 'bbq', titleEn: 'BBQ Night', titleKo: 'BBQ Night', concept: '웨버 그릴과 함께하는 고품격 저녁', description: '최고급 웨버 바비큐 그릴과 불멍용 참나무 장작, 마시멜로 꼬치로 밤을 채우세요.', items: ['웨버 프리미엄 바비큐 그릴', '불멍용 참나무 장작 세트', '마시멜로 꼬치 제공'], info: { time: '17:00 ~ 21:00', type: '개별 유료 서비스' }, icon: <Utensils />, image: 'IMAGE/Play_Prog_02.webp' },
+  { id: 'arcade', titleEn: 'Arcade & Games', titleKo: '보드게임 & 오락기', concept: '가족과 즐기는 아날로그 오락', description: '인기 보드게임부터 추억의 레트로 오락기까지 준비되어 있습니다.', items: ['인기 보드게임 대여', '레트로 멀티 오락기', '프라이빗 게임존'], info: { time: '상시 이용 가능', type: '일부 유료 이용' }, icon: <Gamepad2 />, image: 'IMAGE/Play_Prog_03.webp' },
+  { id: 'cinema', titleEn: 'Private Cinema', titleKo: '프라이빗 시네마', concept: '숲속 영화관에서의 낭만', description: '대형 빔프로젝터와 스크린으로 우리 가족만의 영화관을 만들어 드립니다.', items: ['고화질 빔프로젝터 대여', '100인치 대형 스크린', '블루투스 사운드 시스템'], info: { time: '19:00 ~ 22:00', type: '사전 예약제' }, icon: <MonitorPlay />, image: 'IMAGE/Play_Prog_04.webp' },
+  { id: 'karaoke', titleEn: 'Bus Karaoke', titleKo: '버스 노래방', concept: '이색 개조 버스 노래방', description: '실제 버스를 개조한 프라이빗 노래방에서 신나는 시간을 즐기세요.', items: ['프라이빗 단독 공간', '최신 가요 음원 완비', '90분 이용권 제공'], info: { time: '17:00 ~ 21:00', type: '90분 타임 예약제' }, icon: <Music />, image: 'IMAGE/Play_Prog_05.webp' },
+  { id: 'daybbq', titleEn: 'Day Trip BBQ', titleKo: '당일치기 BBQ', concept: '숙박 없이 즐기는 캠핑 감성', description: '객실 투숙 없이 야외 테라스에서 바비큐만 즐기고 싶은 분들을 위한 서비스입니다.', items: ['4시간 테라스 대여', '바비큐 도구 세트 포함', '계곡 및 편의시설 이용'], info: { time: '12:00 ~ 16:00', type: '당일 전용 상품' }, icon: <Sun />, image: 'IMAGE/Play_Prog_06.webp' },
 ];
 
 const ProgramBlock: React.FC<any> = ({ titleEn, titleKo, concept, description, items, info, icon, image }) => (
@@ -64,7 +63,7 @@ const ExpPlay: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center bg-gray-950 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000" className="w-full h-full object-cover opacity-30 scale-105" alt="Play & Dining" />
+          <img src="IMAGE/Exp_Hero_P.webp" className="w-full h-full object-cover opacity-30 scale-105" alt="Play & Dining" />
         </div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <span className="text-white/40 text-[10px] tracking-[0.5em] font-bold uppercase block mb-6 md:mb-8">Play & Dining</span>
@@ -92,7 +91,7 @@ const ExpPlay: React.FC = () => {
       {/* Unified CTA Section */}
       <section className="bg-stone-950 py-16 px-6 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=2000" alt="BG" className="w-full h-full object-cover grayscale opacity-20 blur-sm" />
+          <img src="IMAGE/Exp_Footer_P.webp" alt="BG" className="w-full h-full object-cover grayscale opacity-20 blur-sm" />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-[3rem] py-16 text-center shadow-2xl">

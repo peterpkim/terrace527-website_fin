@@ -1,24 +1,18 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router';
 import { ChevronRight, ChevronLeft, RefreshCcw } from 'lucide-react';
 
-/**
- * ############################################################
- * [ EDIT AREA: ROOM DETAILS & IMAGES ]
- * ############################################################
- */
 const ROOM_DATA = {
   titleEn: "Signature Stay",
   titleKo: "시그니처 스테이",
   badge: "1 Exclusive Villa",
   description: "오직 한 개 동으로만 운영되는 테라스 527의 익스클루시브 빌라입니다. 최근 리뉴얼을 통해 미니멀한 무드를 극대화한 특별한 공간을 경험하십시오.",
   images: [
-    "IMAGE/main3.jpg", // # 이미지 1: 메인 대표 사진
-    "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?q=80&w=1200", // # 이미지 2: 거실 미니멀 무드
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200", // # 이미지 3: 침실 전경
-    "https://images.unsplash.com/photo-1600607687940-4e7a6a35a119?q=80&w=1200", // # 이미지 4: 조리 공간
-    "https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200"  // # 이미지 5: 정원 뷰
+    "IMAGE/Room_SS_01.webp",
+    "IMAGE/Room_SS_02.webp",
+    "IMAGE/Room_SS_03.webp",
+    "IMAGE/Room_SS_04.webp",
+    "IMAGE/Room_SS_05.webp"
   ],
   specs: {
     type: "Exclusive Villa",
@@ -43,7 +37,6 @@ const RoomsSignatureStay: React.FC = () => {
 
   return (
     <div className="w-full bg-white">
-      {/* ROOM QUICK NAV */}
       <nav className="sticky top-20 bg-white/80 backdrop-blur-md z-40 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 overflow-x-auto scrollbar-hide">
           <div className="flex justify-start md:justify-center items-center min-w-max h-16 gap-8">
