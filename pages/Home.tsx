@@ -18,11 +18,11 @@ import {
 } from 'lucide-react';
 
 const HERO_IMAGES = [
-  'IMAGE/Hero_01.webp', 
-  'IMAGE/Hero_02.webp', 
-  'IMAGE/Hero_03.webp', 
-  'IMAGE/Hero_04.webp', 
-  'IMAGE/Hero_05.webp'
+  './IMAGE/Hero_01.webp', 
+  './IMAGE/Hero_02.webp', 
+  './IMAGE/Hero_03.webp', 
+  './IMAGE/Hero_04.webp', 
+  './IMAGE/Hero_05.webp'
 ];
 
 const EXPERIENCE_ITEMS = [
