@@ -30,14 +30,14 @@ const EXPERIENCE_ITEMS = [
     badge: "Exclusive Package",
     titleKo: "개별 온수 스파",
     description: "프라이빗한 노천 스파에서 즐기는 따뜻한 휴식. 계절의 온도를 피부로 느끼며 쌓인 피로를 씻어냅니다.",
-    image: "https://images.unsplash.com/photo-1544161515-4af6b1d462c2?q=80&w=1200",
+    image: "./IMAGE/Home_Exp_01",
     link: "/experience/heal"
   },
   {
     badge: "Water Play",
     titleKo: "천연 암반수 풀",
     description: "지하 250m 천연 암반수를 사용한 대형 수영장. 화학 약품 없는 깨끗한 물에서 안심하고 즐기세요.",
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200",
+    image: "IMAGE/Home_Exp_02",
     link: "/experience/heal"
   },
   {
