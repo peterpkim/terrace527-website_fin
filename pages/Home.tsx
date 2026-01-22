@@ -18,11 +18,11 @@ import {
 } from 'lucide-react';
 
 const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1464202350444-2453fd634481?q=80&w=2000', 
-  'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=2000', 
-  'https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&w=2000', 
-  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2000', 
-  'https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2000'
+  'IMAGE/Hero_01.webp', 
+  'IMAGE/Hero_02.webp', 
+  'IMAGE/Hero_03.webp', 
+  'IMAGE/Hero_04.webp', 
+  'IMAGE/Hero_05.webp'
 ];
 
 const EXPERIENCE_ITEMS = [
